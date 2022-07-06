@@ -1,0 +1,65 @@
+{
+
+  "existent-user": {
+    "personal-information": {
+      "email": "dehojih863@hekarro.com",
+      "password": "teste"
+    }
+  },
+
+  "invalid-email-user": {
+    "personal-information": {
+      "email": "test",
+      "password": "teste"
+    }
+  },
+
+  "empty-email-user": {
+    "personal-information": {
+      "email": "",
+      "password": "teste"
+    }
+  },
+
+  "invalid-password-user": {
+    "personal-information": {
+      "email": "dehojih863@hekarro.com",
+      "password": "error"
+    }
+  },
+
+  "empty-password-user": {
+    "personal-information": {
+      "email": "test@test.com",
+      "password": ""
+    }
+  },
+
+  "new-user": {
+    "personal-information": {
+      "title": "Mr.",
+      "first-name": "Grakkas",
+      "last-name": "Automation",
+      "email": "generate_@gmail.com",
+      "password": "GrakkasAutomation123!@#",
+      "birthdate": "25/February/1996",
+      "isSignUpNewsletter": false,
+      "isReceivingSpecialOffers": true
+    },
+    "address-information": {
+      "first-name": "Grakkas",
+      "last-name": "Automation",
+      "company": "",
+      "address": "FOUR WINGS LAKE, 401",
+      "address-line2": "",
+      "city": "ALABASTER AL",
+      "State": "Alabama",
+      "zip-code": "35007",
+      "additional-info": "Web Automation Test",
+      "home-phone": "+55 (11) 3321-0843",
+      "mobile-phone": "+55 (11) 9981-0041",
+      "address-alias": "Web Automation"
+    }
+  }
+
+}
