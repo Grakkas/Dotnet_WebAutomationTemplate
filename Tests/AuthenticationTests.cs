@@ -1,6 +1,7 @@
 ﻿using Dotnet_WebAutomationTemplate.Pages;
 using Dotnet_WebAutomationTemplate.Utils;
 using NUnit.Framework;
+using NUnit.Framework.Interfaces;
 
 namespace Dotnet_WebAutomationTemplate.Tests
 {
@@ -17,6 +18,11 @@ namespace Dotnet_WebAutomationTemplate.Tests
         [TearDown]
         public void TearDown()
         {
+            if(TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                AuthenticationPage.TakeScreenshot();
+            }
+
             Assert.That(DriverFactory.Instance.CloseDriver(), Is.True);
             Assert.That(DriverFactory.Instance.CloseDriver(), Is.False);
         }
